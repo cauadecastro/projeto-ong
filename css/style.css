@@ -1,15 +1,15 @@
 
 :root{
-    --cor-primaria: #8b000b;
-    --cor-secundaria: #f5debf;
-    --cor-fonte-escura: rgb(50, 40, 20);
-    --cor-secundaria-escura: rgb(100, 80, 40);
+    --cor-primaria: #8B000B;
+    --cor-secundaria: #F5DEBF;
+    --cor-fonte-escura: #2B2118;
+    --cor-secundaria-escura: #5C3D1E;
     --cor-neutra-escura: #000000;
-    --cor-neutra-clara: #ffffff;
-    --cor-afirmativa: #008000;
-    --cor-destaque: #ff0000;
-    --cor-inativa: #969696;
-    --cor-ativa: #b22222;
+    --cor-neutra-clara: #FFFFFF;
+    --cor-afirmativa: #006B00;
+    --cor-destaque: #B00000;
+    --cor-inativa: #595959;
+    --cor-ativa: #8B000B;
 
     --fonte-principal: 'Gill Sans', 
     'Gill Sans MT', Calibri, 
