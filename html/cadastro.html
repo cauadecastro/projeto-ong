@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Cadastro - ONG Mãos que Ajudam</title>
+</head>
+
+<body>
+
+    <header>
+        
+        <h1>Cadastro</h1>
+
+        <nav class="navegacao-cadastro">
+            <a href="index.html">Início</a>
+        </nav>
+
+    </header>
+
+    <div class="modal" id="modal-cadastro">
+
+    <div class="conteudo-modal">
+        <h2>Cadastro realizado</h2>
+
+        <p>Obrigado por participar da ONG Mãos que Ajudam!</p>
+
+        <button type="button" id="fechar-modal">Fechar</button>
+    </div>
+
+</div>
+
+    <main>
+
+        <h2>Faça seu cadastro</h2>
+
+        <form class="formulario">
+
+            <section class="secao-dados">
+
+        <fieldset class="dados-pessoais">
+            <legend>DADOS PESSOAIS</legend>
+            
+            <label for="nome">NOME:</label>
+            <input 
+            id="nome" 
+            type="text" 
+            name="nome" 
+            required
+            >
+
+            <label for="email">EMAIL:</label>
+            <input 
+            id="email" 
+            type="email" 
+            name="email" 
+            required
+            >
+
+            <label for="telefone">TELEFONE:</label>
+            <input 
+            placeholder="(00)12345-6789"
+            id="telefone" 
+            type="tel" 
+            name="telefone"
+            pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}" 
+        
+            >
+
+            <label for="cpf">CPF:</label>
+            <input 
+            placeholder="123.456.789-01"
+            maxlength="14"
+            id="cpf" 
+            type="text" 
+            name="cpf"
+            pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}"
+            required
+            >
+
+            <label for="data">DATA DE NASCIMENTO</label>
+            <input 
+            type="date" 
+            name="data de nascimento" 
+            id="data" 
+            required
+            >
+        
+        </fieldset>
+
+        <fieldset class="dados-endereco">
+            <legend>ENDERECO</legend>
+            
+            <label for="cep">CEP:</label>
+            <input 
+            placeholder="12345-678"
+            maxlength="9"
+            id="cep" 
+            type="text" 
+            name="cep" 
+            pattern="[0-9]{5}-[0-9]{3}"
+            required
+            >
+             <label for="rua">RUA</label>
+            <input 
+            type="text" 
+            name="rua"
+            id="rua"
+            required
+            >
+             <label for="numero">NUMERO</label>
+            <input 
+            type="text" 
+            name="numero"
+            id="numero"
+            required
+            >
+            <label for="cidade">CIDADE</label>
+            <input 
+            type="text" 
+            name="cidade" 
+            id="cidade"
+            required
+            >
+            <label for="estado">ESTADO</label>
+             <select name="estado" id="estado" required>
+                <option value="">SELECIONE</option>
+                <option value="BA">Bahia</option>
+                <option value="SP">Sao Paulo</option>
+                <Option value="MG">Minas Gerais</Option>
+             </select>
+
+        </fieldset>
+
+        </section>
+            <section class="secao-participacao">
+
+        <fieldset class="participacao">
+
+            <legend>como deseja participar?</legend>
+
+            <input 
+                 type="checkbox" 
+                name="participacao" 
+                id="doacao"
+                value="doacao"
+                >
+
+            <label class="label-doacao" for="doacao">
+                <span class="checkmark"></span>
+                FAZER DOACOES
+            </label>
+
+            <input 
+                 type="checkbox" 
+                 name="participacao" 
+                  id="voluntariado"
+                 value="voluntariado"  
+            >
+            
+            <label class="label-voluntario" for="voluntariado">
+                <span class="checkmark"></span>
+                TRABRALHO VOLUNTARIO
+            </label>
+
+        </fieldset>
+        
+        <fieldset class="tipo-contato">
+
+            <legend>COMO PREFERE SER CONTATADO?</legend>
+
+              <input
+                 type="radio"
+                 id="contato-email"
+                 name="preferencia_contato"
+                  value="email"
+>
+            <label for="contato-email"><span class="checkmark">
+
+            </span>
+                E-mail
+            </label>
+
+            <input
+                type="radio"
+                id="contato-telefone"
+                name="preferencia_contato"
+                value="telefone"
+>
+            <label for="contato-telefone">
+                <span class="checkmark"></span>
+                Telefone
+            </label>
+
+        </fieldset>
+
+        </section>
+
+    <button id="cadastrar" type="submit">CADASTRAR</button>
+        
+    </form>
+
+    <div class="alerta">
+        Cadastro realizado com sucesso!
+    </div>
+
+    </main>
+
+    <footer>
+        <p>ONG Mãos que Ajudam</p>
+    </footer>
+
+<script src="../js/script.js"></script>
+<script src="../js/storage.js"></script>
+
+</body>
+
+</html>
