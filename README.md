@@ -2,8 +2,6 @@
 
 ## Apresentação
 
-## Apresentação
-
 O Mãos que Ajudam é um projeto acadêmico de um site para uma ONG fictícia.
 O objetivo é apresentar uma interface de participação e cadastro de pessoas
 interessadas em contribuir com a organização.
