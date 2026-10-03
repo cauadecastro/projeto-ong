@@ -647,3 +647,90 @@ display: block;
         
 }   
 
+/* MODO NOTURNO */
+@media (prefers-color-scheme: dark) {
+
+   :root {
+    --cor-primaria: #6366f1;
+    --cor-secundaria: #1e1b4b;
+    --cor-fonte-escura: #f8fafc;
+    --cor-secundaria-escura: #a5b4fc;
+    --cor-neutra-escura: #ffffff;
+    --cor-neutra-clara: #0f172a;
+    --cor-afirmativa: #22c55e;
+    --cor-destaque: #38bdf8;
+    --cor-inativa: #94a3b8;
+    --cor-ativa: #818cf8;
+}
+
+    body {
+        background-color: var(--cor-neutra-clara);
+        color: var(--cor-fonte-escura);
+    }
+
+    header,
+    footer {
+        background-color: var(--cor-secundaria);
+        color: var(--cor-fonte-escura);
+    }
+
+    nav {
+        background-color: var(--cor-secundaria);
+    }
+
+    nav a {
+        color: var(--cor-fonte-escura);
+    }
+
+    .formulario {
+        background-color: var(--cor-secundaria);
+        color: var(--cor-fonte-escura);
+    }
+
+    fieldset {
+        background-color: var(--cor-secundaria);
+        border-color: var(--cor-secundaria-escura);
+    }
+
+    legend {
+        color: var(--cor-fonte-escura);
+    }
+
+    .formulario input,
+    .formulario select {
+        background-color: var(--cor-neutra-clara);
+        color: var(--cor-fonte-escura);
+        border-color: var(--cor-secundaria-escura);
+    }
+
+    .formulario input::placeholder {
+        color: var(--cor-inativa);
+    }
+
+    .formulario input:focus,
+    .formulario select:focus {
+        background-color: var(--cor-neutra-clara);
+        color: var(--cor-fonte-escura);
+        box-shadow: 0 0 5px var(--cor-ativa);
+    }
+
+    .card {
+        background-color: var(--cor-secundaria);
+        color: var(--cor-fonte-escura);
+        border-color: var(--cor-secundaria-escura);
+    }
+
+    .modal {
+        background-color: var(--cor-secundaria);
+        color: var(--cor-fonte-escura);
+    }
+
+    button {
+        background-color: var(--cor-primaria);
+        color: var(--cor-neutra-escura);
+    }
+
+    button:hover {
+        background-color: var(--cor-ativa);
+    }
+}

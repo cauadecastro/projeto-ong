@@ -20,14 +20,24 @@
 
     </header>
 
-    <div class="modal" id="modal-cadastro">
+    <div 
+    class="modal" 
+    id="modal-cadastro"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="titulo-modal">
 
     <div class="conteudo-modal">
-        <h2>Cadastro realizado</h2>
+        <h2 id="titulo-modal">Cadastro realizado</h2>
 
         <p>Obrigado por participar da ONG Mãos que Ajudam!</p>
 
-        <button type="button" id="fechar-modal">Fechar</button>
+        <button 
+            type="button" 
+            id="fechar-modal"
+            aria-label="Fechar janela de cadastro">
+            Fechar
+        </button>
     </div>
 
 </div>
@@ -212,8 +222,8 @@
         <p>ONG Mãos que Ajudam</p>
     </footer>
 
-<script src="../js/script.js"></script>
-<script src="../js/storage.js"></script>
+<script type="module" src="../js/script.js"></script>
+<script type="module" src="../js/storage.js"></script>
 
 </body>
 

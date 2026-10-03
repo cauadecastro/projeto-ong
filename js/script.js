@@ -34,12 +34,19 @@ if (cardsAjuda) {
     });
 }
 
-if(botaoMenu && menu) {
-   
-    botaoMenu.addEventListener("click", function (){
+if (botaoMenu && menu) {
+    botaoMenu.addEventListener("click", function () {
+        menu.classList.toggle("menu-aberto");
 
-    menu.classList.toggle("menu-aberto");
-});
+        const menuAberto = menu.classList.contains("menu-aberto");
+
+        botaoMenu.setAttribute("aria-expanded", menuAberto);
+
+        botaoMenu.setAttribute(
+            "aria-label",
+            menuAberto ? "Fechar menu" : "Abrir menu"
+        );
+    });
 }
 
 if (modal && botaoFecharModal) {

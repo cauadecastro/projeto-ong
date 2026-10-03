@@ -16,9 +16,15 @@
 
     <header>
 
-        <button class="menu-hamburguer" type="button">☰</button>
+        <button 
+            class="menu-hamburguer" 
+            type="button"
+            aria-label="Abrir menu"
+            aria-expanded="false">
+            ☰
+        </button>
 
-        <nav id="menu">
+        <nav id="menu" aria-label="Navegação principal">
             <a class="inicio" href="index.html" data-pagina="inicio">Início</a>
 
             <div class="dropdown">
@@ -73,7 +79,7 @@
 
     </footer>
 
-    <script src="../js/script.js"></script>
+    <script type="module" src="../js/script.js"></script>
 
 </body>
 

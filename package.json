@@ -1,0 +1,17 @@
+{
+  "name": "projeto-ong",
+  "version": "1.0.0",
+  "description": "O Mãos que Ajudam é um projeto acadêmico de um site para uma ONG fictícia. O objetivo é apresentar uma interface de participação e cadastro de pessoas interessadas em contribuir com a organização.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "vite": "^8.3.2"
+  }
+}
+
