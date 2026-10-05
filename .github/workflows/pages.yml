@@ -22,9 +22,18 @@ jobs:
 
       - uses: actions/configure-pages@v5
 
+      - name: Preparar site
+        run: |
+          mkdir site
+          cp html/*.html site/
+          cp -r css site/
+          cp -r js site/
+          cp -r imagens site/
+          sed -i 's|\.\./css/|css/|g; s|\.\./js/|js/|g; s|\.\./imagens/|imagens/|g' site/*.html
+
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: './html'
+          path: './site'
 
       - name: Deploy to GitHub Pages
         id: deployment
